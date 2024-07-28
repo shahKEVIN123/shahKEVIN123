@@ -1,0 +1,42 @@
+#include<stdio.h>
+void main()
+{
+	int a[20],i,j,n,k,temp,smallest;
+	clrscr();
+	printf("Enter the number of element:");
+	scanf("%d",&n);
+	for(i=0;i<n;i++)
+	{
+		printf("Enter the Element %d:",i+1);
+		scanf("%d",&a[i]);
+	}
+	printf("unsorted array:\n");
+	for(i=0;i<n;i++)
+	{
+		printf("%d\n",a[i]);
+	}
+	printf("\n");
+	for(i=0;i<n-1;i++)
+	{
+		smallest=i;
+		for(k=i+1;k<n;k++)
+		{
+			if(a[smallest]>a[k])
+				smallest=k;
+		}
+		if(i!=smallest)
+		{
+			temp=a[i];
+			a[i]=a[smallest];
+			a[smallest]=temp;
+		}
+	       printf("after pass %d element are:",i+1);
+		for(j=0;j<n;j++)
+			printf("%d\t",a[j]);
+		printf("\n");
+	}
+	printf("sorted array:\n");
+	for(i=0;i<n;i++)
+		printf("%d\n",a[i]);
+getch();
+}

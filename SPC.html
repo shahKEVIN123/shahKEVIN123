@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</head>
+
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'spartan',sans-serif;
+}
+
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2{
+    font-size: 54px;
+    line-height: 64px;
+    color: #222;
+}
+
+h4{
+        font-size: 20px;
+        color: #222;
+}
+
+h6{
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p{
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1{
+    padding: 40px 80px;
+}
+
+.section-m1{
+    margin: 40px 0;
+}
+
+body{
+    width: 100%;
+}
+
+/*header */
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color:whitesmoke;
+    box-shadow: 0 5px 15px rgba(0 0 0 0.06);
+    z-index: 999;
+    position:sticky;
+    top: 0;
+    left: 0;
+}
+
+/* navbar */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3 ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+    color: #465A52;
+}
+
+/* home */
+
+#hero{
+    background-image: url("Blog_Banner_-260723-party-wear-saree-by-Chinaya-Banaras.webp");
+    height: 80vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+}
+
+#feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#feature .fe-box{
+    width: 180PX;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0 0 0 0.03);
+    border: 1px solid #cce7dc;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+
+#feature .fe-box:hover{
+    box-shadow: 10px 10px 54px rgba(70,62,221,0.1);
+}
+
+#feature .fe-box img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#feature .fe-box h6{
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #088178;
+    background-color: #fddde4
+}
+
+#product1{
+    text-align: center;
+}
+
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+
+}
+
+#product1 .pro {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7dc;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0 0 0 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+}
+
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0 0 0 0.06);
+}
+
+#product1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+#product1 .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+
+#product1 .pro .des span{
+    color: #606063;
+    font-size: 12px;
+}
+
+#product1 .pro .des h5{
+    color: #1a1a1a;
+    padding-top: 7px;
+    font-size: 14px;
+}
+
+#product1 .pro .des i{
+    font-size: 12px;
+    color: rgba(243, 181, 25 );
+} 
+
+#product1 .pro .button{
+    width: 90px;
+    height: 40px;
+    background-color: #e07348;
+    color: #fff;
+    border: 1px solid #cce7dc;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* footer */
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer  .col{
+    display: flex;
+    flex-direction: column;
+   align-items: flex-start;
+   margin-bottom: 20px;
+}
+
+footer .logo{
+    margin-bottom: 30px;
+    height: 60px;
+    width: 100px;
+}
+
+footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+footer p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+}
+</style>
+
+<body>
+
+    <section id="header">
+        <a href="#"><img src="Screenshot 2024-02-28 160327.png" class="logo" alt="" height="60px" width="100"></a>
+    <div>
+        <ul id="navbar">
+            <li><a  class="active"href="SPC.html">HOME</a></li>
+            <li><a href="shop.html">SHOP</a></li>
+            <li><a href="ABOUT.html">ABOUT</a></li>
+            <li><a href="CONTACT.html">CONTACT</a></li>
+            <li><a href="Cart.html"><ion-icon name="cart-outline"></ion-icon><span>0</span></a></li>
+        </ul>
+    </div>
+    </section>
+
+    <section id="hero">
+      
+    </section>
+
+    <section id="feature" class="section-p1">
+        <div class="fe-box">
+            <img src="f1.png" alt="">
+            <h6>Free shipping</h6>
+        </div>
+        <div class="fe-box">
+            <img src="f2.png" alt="">
+            <h6>Online Order</h6>
+        </div>
+        <div class="fe-box">
+            <img src="f3.png" alt="">
+            <h6>Save Money</h6>
+        </div>
+        <div class="fe-box">
+            <img src="f4.png" alt="">
+            <h6>Promotions</h6>
+        </div>
+        <div class="fe-box">
+            <img src="f5.png" alt="">
+            <h6>Happy Sell</h6>
+        </div>
+        <div class="fe-box">
+            <img src="f6.png" alt="">
+            <h6>F24/7 Support</h6>
+        </div>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <h2>Kashmiri Saree</h2>
+        <div class="pro-container">
+            <!--1-->
+            <div class="pro">
+                <img src="Glory Sarees.jpg" alt="">
+                <div class="des">
+                    <span>Glory Sarees</span>
+                    <h5>Silk</h5>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>₹2,230</h4>
+                </div>
+                <a href="sproduct.html"><button class="button">Viwe Product</button></a>
+            </div>
+        <!--2 product-->
+        <div class="pro">
+            <img src="91Z0+rI6+fL._SY741_.jpg" alt="">
+            <div class="des">
+                <span>MANOHARI Banarasi</span>
+                <h5>Silk</h5>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h4>₹2,700</h4>
+            </div>
+            <a href="sproduct2.html"><button class="button">Viwe Product</button></a>
+        </div>
+        <!--3-->
+        <div class="pro">
+            <img src="Silk3.jpg" alt="" width="284" height="327">
+            <div class="des">
+                <span>SATIKA VASTRAM</span>
+                <h5>Silk</h5>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    
+                </div>
+                <h4>₹1,999</h4>
+            </div>
+            <a href="sproduct3.html"><button class="button">Viwe Product</button></a>
+        </div>
+        <!--4-->
+        <div class="pro">
+            <img src="71vg-siYnqL._SY741_.jpg" alt="">
+            <div class="des">
+                <span>Monjolika Fashion</span>
+                <h5>Silk</h5>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h4>₹1,715</h4>
+            </div>
+            <a href="sproduct4.html"><button class="button">Viwe Product</button></a>
+        </div>
+        </div>
+    </section>
+
+    <!--product 2-->
+
+    <section id="product1" class="section-p1">
+        <h2>Cotton Saree</h2>
+        <div class="pro-container">
+            <!--1-->
+            <div class="pro">
+                <img src="71IhFy4eLnL._SY741_.jpg" alt="">
+                <div class="des">
+                    <span>Cotton Sarees</span>
+                    <h5>Silk</h5>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>₹999</h4>
+                </div>
+                <a href="#"><button class="button">Add Cart</button></a>
+            </div>
+        <!--2 product-->
+        <div class="pro">
+            <img src="61Q7NPHkweL._SX522_.jpg" alt="" height="340">
+            <div class="des">
+                <span>Cotton Printed Zari</span>
+                <h5> Zari</h5>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h4>₹1,500</h4>
+            </div>
+            <a href="#"><button class="button">Add Cart</button></a>
+        </div>
+        <!--3-->
+        <div class="pro">
+            <img src="712d4KbSsFL._SY741_.jpg" alt="" height="340">
+            <div class="des">
+                <span>Cotton Silk</span>
+                <h5>Silk</h5>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    
+                </div>
+                <h4>₹1,999</h4>
+            </div>
+            <a href="#"><button class="button">Add Cart</button></a>
+        </div>
+        <!--4-->
+        <div class="pro">
+            <img src="91pzgEbZTrL._SY741_.jpg" alt="" height="340">
+            <div class="des">
+                <span>Banarasi Silk</span>
+                <h5>Silk</h5>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h4>₹1,798</h4>
+            </div>
+            <a href="#"><button class="button">Add Cart</button></a>
+        </div>
+        </div>
+    </section>
+    
+    <footer class="section-p1">
+        <div class="col">
+            <img src="Screenshot 2024-02-28 160327.png" class="logo" alt="">
+            <h4>CONTACT</h4>
+            <p><strong>Address:-</strong>Shah popatlal chandulal near by deepkala,Ratanpol,ahmedabad,gujrat</p>
+            <p><strong>Phone:-</strong>9898892453</p>
+            <p><strong>Hours:-</strong>11:00 am-11:00 pm, Monday-Saturday</p>
+            <div class="Follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/khushalishah07/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>ABOUT</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store Or Google Play</p>
+            <div class="row">
+                <img src="play.jpg" alt="">
+                <img src="app.jpg" alt="">
+            </div>
+            <h4>Secured payment Gateways</h4>
+            <img src="pay.png" alt="">
+        </div>
+    </footer>
+</body>
+
+</html>

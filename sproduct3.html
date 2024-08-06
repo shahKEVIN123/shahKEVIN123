@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link rel="stylesheet" href="SPC.css">
+</head>
+
+<body>
+
+    <section id="header">
+        <a href="#"><img src="Screenshot 2024-02-28 160327.png" class="logo" alt="" height="60px" width="100"></a>
+    <div>
+        <ul id="navbar">
+            <li><a href="SPC.html">HOME</a></li>
+            <li><a class="active"  href="kevin.html">SHOP</a></li>
+            <li><a href="ABOUT.html">ABOUT</a></li>
+            <li><a href="CONTACT.html">CONTACT</a></li>
+            <li><a href="Cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+        </ul>
+    </div>
+    </section>
+
+    <section id="prodetails" class="section-p1">
+        <div class="Single-pro-img-group">
+            <img src="Silk3.jpg" width="100%" id="main" alt="">
+            <div class="small-img">
+                <div class="small-img-col">
+                    <img src="71dgPSNsSyL._SX569_.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="81j7Te0wtzL._SX569_.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="81gCD6Uj+LL._SY741_.jpg" width="100%" class="small-img" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="single-pro-details">
+            <h6>Brand:SATIKA VASTRAM</h6>
+            <h4>Silk</h4>
+            <h2>₹2,999</h2>
+            <h4>Product Details</h4>
+            <span>Material composition:Cotton Silk <br>
+                Weave type:Zari <br>
+                Occasion type:Festival, Wedding <br>
+                Pattern:Solid <br>
+                Included components:With blouse piece <br>
+                Care instructions:Hand Wash Only <br>
+                Country of Origin:India</span>
+        </div>
+    </section>
+    
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="Screenshot 2024-02-28 160327.png" alt="" width="99px" height="">
+            <h4>CONTACT</h4>
+            <p><strong>Address:-</strong>Shah popatlal chandulal near by deepkala,Ratanpol,ahmedabad,gujrat</p>
+            <p><strong>Phone:-</strong>9898892453</p>
+            <p><strong>Hours:-</strong>11:00 am-11:00 pm, Monday-Saturday</p>
+            <div class="Follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fa-brands fa-twitter"></i>
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/khushalishah07/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>ABOUT</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store Or Google Play</p>
+            <div class="row">
+                <img src="play.jpg" alt="">
+                <img src="app.jpg" alt="">
+            </div>
+            <h4>Secured payment Gateways</h4>
+            <img src="pay.png" alt="">
+        </div>
+    </footer>
+    
+    <script>
+        var main = document.getElementById("main");
+        var smallimg = document.getElementsByClassName("small-img");
+        
+        smallimg[0].onclick = function(){
+            maini.src = smallimg[0].src;
+        }
+        smallimg[1].onclick = function(){
+            main.src = smallimg[1].src;
+        }
+        smallimg[2].onclick = function(){
+            main.src = smallimg[2].src;
+        }
+        smallimg[3].onclick = function(){
+            main.src = smallimg[3].src;
+        }
+    </script>
+</body>
+
+</html>
